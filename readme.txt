@@ -4,7 +4,7 @@ Tags: woocommerce, clp, ghs, hazard, safety data sheet
 Requires at least: 6.2
 Tested up to: 7.1
 Requires PHP: 8.0
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -24,7 +24,9 @@ Front end: a "Safety and warnings" tab on the product page with the pictograms, 
 Settings: WooCommerce > Hazard (CLP) (tab on/off, tab title, pictograms on cards).
 
 = Sources =
-* Statement texts: official Slovenian wording of Regulation (EC) No 1272/2008 (CLP), as published by the European Commission in the SAMANCTA database, page "Stavki H/P" (https://ec.europa.eu/taxation_customs/dds2/SAMANCTA/SL/Safety/HP_SL.htm), version 1.1 of 9 August 2019: 62 H statements, 22 EUH statements, 118 P statements. The stored copy is includes/data/statements-sl.json. Newer additions to CLP after that version are not in the list; add them with the degriz_hazard_statements filter, and check the wording against the current CLP text on EUR-Lex before relying on it. The list is abbreviated by its publisher in places: P statements with a blank to be filled in end with "..." (P230, P264, P320, P321, P411, P413, P501 and the combined ones), statements with "/..." keep that placeholder, and the H340, H341, H350, H351, H360, H361, H370-H373 texts lack the bracketed "state the route of exposure" part. The official complete wording is in Annexes III and IV of the Slovenian CLP Regulation; I could not retrieve it (EUR-Lex was unavailable), so the plugin shows the list as published and lets you enter the complete text per code under WooCommerce > Hazard (CLP) > Statement texts. The plugin is a display tool: classification and labelling remain the responsibility of the supplier.
+* Statement texts: the official Slovenian wording of Regulation (EC) No 1272/2008 (CLP), consolidated text of 1 July 2026 (document "02008R1272 - SL - 01.07.2026 - 031.001"), taken from the EU Publications Office (Cellar): http://publications.europa.eu/resource/celex/02008R1272-20260701 (Accept-Language: slv, XHTML). H and EUH statements from Annex III, P statements (including the combined ones) from Annex IV part 2: 91 H, 31 EUH and 127 P statements, including the endocrine disruptor and PBT/vPvB statements EUH380, EUH381, EUH430, EUH431, EUH440, EUH441, EUH450 and EUH451 added by Delegated Regulation (EU) 2023/707. The stored copy is includes/data/statements-sl.json; its "meta" block records the source, the consolidation date and the exceptions.
+* Placeholders are part of the official text and are left as they are: text in angle brackets <...> (for example H340 "<navesti način izpostavljenosti, ...>", EUH208 "<ime snovi, ki povzroča preobčutljivost>") and "..." (for example P501 "Odstraniti vsebino/posodo ...", whose conditions of use in Annex IV add "... v skladu z lokalnimi/regionalnimi/nacionalnimi/mednarodnimi predpisi (se določi)"). The supplier completes them: under WooCommerce > Hazard (CLP) > Statement texts you can enter the completed text per code.
+* Exceptions inside the same document: H220, H221, H222, H230 and H231 have no language table, their text is taken from the hazard class tables of the same consolidated text; the letter variants H350i, H360F, H360D, H360FD, H360Fd, H360Df, H361f, H361d and H361fd come from the table that explains them; EUH001 is deleted in the consolidated text. Codes added by later amendments after 1 July 2026 are not in the list; add them with the degriz_hazard_statements filter. The plugin is a display tool: classification and labelling remain the responsibility of the supplier.
 * GHS pictograms GHS01-GHS09: the pictograms of the UN GHS (UNECE), which are in the public domain; the SVG files come from Wikimedia Commons (files "GHS-pictogram-*.svg").
 * Pictogram names and the signal words are standard labels; "Nevarno" and "Pozor" are the Slovenian CLP signal words.
 
@@ -45,10 +47,13 @@ Add it with the degriz_hazard_statements filter (code => text, group "H" or "P")
 
 == Changelog ==
 
+= 1.0.1 =
+* Statement texts replaced by the official Slovenian wording of the consolidated CLP Regulation of 1 July 2026 (Annex III and IV), with all placeholders kept as in the regulation.
+
 = 1.0.0 =
 * First release.
 
 == Upgrade Notice ==
 
-= 1.0.0 =
-First release.
+= 1.0.1 =
+Official Slovenian statement texts from the consolidated CLP Regulation.

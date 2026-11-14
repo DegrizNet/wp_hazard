@@ -155,7 +155,7 @@ class Settings {
 					<tr>
 						<th scope="row"><label for="dhz-overrides"><?php esc_html_e( 'Statement texts', 'degriz-hazard' ); ?></label></th>
 						<td><textarea id="dhz-overrides" class="large-text code" rows="6" name="<?php echo esc_attr( $name ); ?>[overrides]" placeholder="P501 | ..."><?php echo esc_textarea( (string) self::get( 'overrides' ) ); ?></textarea>
-							<p class="description"><?php esc_html_e( 'The bundled list is the Slovenian list of the European Commission, which shortens some statements (for example P501 ends with "..."). To show a complete text, enter it here, one per line as: CODE | text.', 'degriz-hazard' ); ?></p></td>
+							<p class="description"><?php esc_html_e( 'The bundled list is the official Slovenian text of the CLP Regulation. Placeholders such as "..." in P501 are completed by the supplier: to show the completed text, enter it here, one per line as: CODE | text.', 'degriz-hazard' ); ?></p></td>
 					</tr>
 				</table>
 				<?php submit_button(); ?>

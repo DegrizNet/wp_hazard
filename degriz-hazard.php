@@ -3,7 +3,7 @@
  * Plugin Name:       Degriz Hazard
  * Plugin URI:        https://degriz.net
  * Description:       CLP hazard information for WooCommerce products: signal word, GHS pictograms, H and P statements and safety data sheet downloads.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Requires at least: 6.2
  * Requires PHP:      8.0
  * Requires Plugins:  woocommerce
@@ -20,7 +20,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'DEGRIZ_HAZARD_VERSION', '1.0.0' );
+define( 'DEGRIZ_HAZARD_VERSION', '1.0.1' );
 define( 'DEGRIZ_HAZARD_FILE', __FILE__ );
 define( 'DEGRIZ_HAZARD_DIR', plugin_dir_path( __FILE__ ) );
 define( 'DEGRIZ_HAZARD_URL', plugin_dir_url( __FILE__ ) );

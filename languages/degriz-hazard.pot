@@ -158,7 +158,7 @@ msgid "Technical data sheet (PDF)"
 msgstr ""
 
 #: includes/class-settings.php:158
-msgid "The bundled list is the Slovenian list of the European Commission, which shortens some statements (for example P501 ends with \"...\"). To show a complete text, enter it here, one per line as: CODE | text."
+msgid "The bundled list is the official Slovenian text of the CLP Regulation. Placeholders such as \"...\" in P501 are completed by the supplier: to show the completed text, enter it here, one per line as: CODE | text."
 msgstr ""
 
 #: includes/class-settings.php:138

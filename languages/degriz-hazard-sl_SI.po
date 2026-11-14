@@ -159,8 +159,8 @@ msgid "Technical data sheet (PDF)"
 msgstr "Tehnični list (PDF)"
 
 #: includes/class-settings.php:158
-msgid "The bundled list is the Slovenian list of the European Commission, which shortens some statements (for example P501 ends with \"...\"). To show a complete text, enter it here, one per line as: CODE | text."
-msgstr "Priložen seznam je slovenski seznam Evropske komisije, ki nekatere stavke skrajša (na primer P501 se konča z \"...\"). Za prikaz celotnega besedila ga vnesite tukaj, po eno vrstico: KODA | besedilo."
+msgid "The bundled list is the official Slovenian text of the CLP Regulation. Placeholders such as \"...\" in P501 are completed by the supplier: to show the completed text, enter it here, one per line as: CODE | text."
+msgstr "Priloženi seznam je uradno slovensko besedilo uredbe CLP. Dopolnila, kot je \"...\" pri P501, dopolni dobavitelj: za prikaz dopolnjenega besedila ga vnesite tukaj, po eno vrstico: KODA | besedilo."
 
 #: includes/class-settings.php:138
 msgid "The hazard data is entered per product, in the product editor, tab \"Hazard (CLP)\". Variations use the data of their parent product."

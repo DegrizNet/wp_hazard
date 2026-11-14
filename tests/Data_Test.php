@@ -37,6 +37,19 @@ class Data_Test extends TestCase {
 		$this->assertSame( 'Povzroča draženje kože.', $json['H']['H315'] );
 	}
 
+	public function test_statement_list_records_its_official_source(): void {
+		$json = json_decode( (string) file_get_contents( dirname( __DIR__ ) . '/includes/data/statements-sl.json' ), true );
+		$this->assertSame( '2026-07-01', $json['meta']['consolidation_date'] );
+		$this->assertStringContainsString( 'publications.europa.eu', $json['meta']['source_url'] );
+		$this->assertGreaterThanOrEqual( 120, count( $json['P'] ) );
+		foreach ( array( 'EUH380', 'EUH381', 'EUH430', 'EUH431', 'EUH440', 'EUH441', 'EUH450', 'EUH451' ) as $code ) {
+			$this->assertArrayHasKey( $code, $json['EUH'] );
+		}
+		$this->assertSame( 'Odstraniti vsebino/posodo …', $json['P']['P501'] );
+		$this->assertStringContainsString( '<navesti način izpostavljenosti', $json['H']['H340'] );
+		$this->assertArrayNotHasKey( 'EUH001', $json['EUH'] );
+	}
+
 	public function test_every_pictogram_has_an_svg_file(): void {
 		for ( $i = 1; $i <= 9; $i++ ) {
 			$file = dirname( __DIR__ ) . '/assets/pictograms/GHS0' . $i . '.svg';
