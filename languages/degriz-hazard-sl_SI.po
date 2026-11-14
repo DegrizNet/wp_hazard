@@ -62,11 +62,11 @@ msgstr "Piktogrami GHS"
 msgid "Gas under pressure"
 msgstr "Plin pod tlakom"
 
-#: includes/class-admin.php:32 includes/class-settings.php:69
+#: includes/class-admin.php:32 includes/class-settings.php:86
 msgid "Hazard (CLP)"
 msgstr "Nevarnost (CLP)"
 
-#: includes/class-settings.php:68 includes/class-settings.php:118
+#: includes/class-settings.php:85 includes/class-settings.php:136
 msgid "Hazard information (CLP)"
 msgstr "Podatki o nevarnosti (CLP)"
 
@@ -86,7 +86,7 @@ msgstr "Nevarno za okolje"
 msgid "Irritant, harmful"
 msgstr "Dražilno, zdravju škodljivo"
 
-#: includes/class-settings.php:131
+#: includes/class-settings.php:149
 msgid "Leave empty for the default title."
 msgstr "Pustite prazno za privzeti naslov."
 
@@ -106,11 +106,11 @@ msgstr "Previdnostni stavki"
 msgid "Precautionary statements (P)"
 msgstr "Previdnostni stavki (P)"
 
-#: includes/class-settings.php:134
+#: includes/class-settings.php:152
 msgid "Product cards"
 msgstr "Kartice izdelkov"
 
-#: includes/class-settings.php:125
+#: includes/class-settings.php:143
 msgid "Product page"
 msgstr "Stran izdelka"
 
@@ -118,7 +118,7 @@ msgstr "Stran izdelka"
 msgid "Remove"
 msgstr "Odstrani"
 
-#: includes/class-settings.php:51 includes/class-settings.php:130
+#: includes/class-settings.php:68 includes/class-settings.php:148
 msgid "Safety and warnings"
 msgstr "Varnost in opozorila"
 
@@ -134,11 +134,11 @@ msgstr "Resna nevarnost za zdravje"
 msgid "Settings"
 msgstr "Nastavitve"
 
-#: includes/class-settings.php:135
+#: includes/class-settings.php:153
 msgid "Show small pictograms under the price (shop, categories, related products)"
 msgstr "Prikaži majhne piktograme pod ceno (trgovina, kategorije, povezani izdelki)"
 
-#: includes/class-settings.php:126
+#: includes/class-settings.php:144
 msgid "Show the safety tab"
 msgstr "Prikaži zavihek z varnostnimi podatki"
 
@@ -146,7 +146,11 @@ msgstr "Prikaži zavihek z varnostnimi podatki"
 msgid "Signal word"
 msgstr "Opozorilna beseda"
 
-#: includes/class-settings.php:129
+#: includes/class-settings.php:156
+msgid "Statement texts"
+msgstr "Besedila stavkov"
+
+#: includes/class-settings.php:147
 msgid "Tab title"
 msgstr "Naslov zavihka"
 
@@ -154,7 +158,11 @@ msgstr "Naslov zavihka"
 msgid "Technical data sheet (PDF)"
 msgstr "Tehnični list (PDF)"
 
-#: includes/class-settings.php:120
+#: includes/class-settings.php:158
+msgid "The bundled list is the Slovenian list of the European Commission, which shortens some statements (for example P501 ends with \"...\"). To show a complete text, enter it here, one per line as: CODE | text."
+msgstr "Priložen seznam je slovenski seznam Evropske komisije, ki nekatere stavke skrajša (na primer P501 se konča z \"...\"). Za prikaz celotnega besedila ga vnesite tukaj, po eno vrstico: KODA | besedilo."
+
+#: includes/class-settings.php:138
 msgid "The hazard data is entered per product, in the product editor, tab \"Hazard (CLP)\". Variations use the data of their parent product."
 msgstr "Podatki o nevarnosti se vnašajo pri izdelku, v urejevalniku izdelka, zavihek \"Nevarnost (CLP)\". Različice uporabljajo podatke nadrejenega izdelka."
 

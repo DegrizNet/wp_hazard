@@ -50,6 +50,8 @@ TRANSLATIONS = {
     'Leave empty for the default title.': 'Pustite prazno za privzeti naslov.',
     'Product cards': 'Kartice izdelkov',
     'Show small pictograms under the price (shop, categories, related products)': 'Prikaži majhne piktograme pod ceno (trgovina, kategorije, povezani izdelki)',
+    'Statement texts': 'Besedila stavkov',
+    'The bundled list is the Slovenian list of the European Commission, which shortens some statements (for example P501 ends with "..."). To show a complete text, enter it here, one per line as: CODE | text.': 'Priložen seznam je slovenski seznam Evropske komisije, ki nekatere stavke skrajša (na primer P501 se konča z "..."). Za prikaz celotnega besedila ga vnesite tukaj, po eno vrstico: KODA | besedilo.',
     'Settings': 'Nastavitve',
     'Degriz Hazard requires WooCommerce to be active.': 'Degriz Hazard zahteva aktiven WooCommerce.',
 }

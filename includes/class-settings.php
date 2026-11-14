@@ -23,7 +23,24 @@ class Settings {
 			'show_tab'   => 1,
 			'show_cards' => 0,
 			'tab_title'  => '',
+			'overrides'  => '',
 		);
+	}
+
+	/**
+	 * Statement texts the shop completed: one "CODE | text" per line.
+	 *
+	 * @return array<string,string> code => text
+	 */
+	public static function overrides(): array {
+		$out = array();
+		foreach ( preg_split( '/\R/', (string) self::get( 'overrides' ) ) as $line ) {
+			$parts = explode( '|', $line, 2 );
+			if ( 2 === count( $parts ) && preg_match( '/^(EUH|H|P)[0-9A-Za-z+]+$/', trim( $parts[0] ) ) && '' !== trim( $parts[1] ) ) {
+				$out[ trim( $parts[0] ) ] = trim( $parts[1] );
+			}
+		}
+		return $out;
 	}
 
 	/**
@@ -100,6 +117,7 @@ class Settings {
 			'show_tab'   => empty( $input['show_tab'] ) ? 0 : 1,
 			'show_cards' => empty( $input['show_cards'] ) ? 0 : 1,
 			'tab_title'  => sanitize_text_field( (string) ( $input['tab_title'] ?? '' ) ),
+			'overrides'  => sanitize_textarea_field( (string) ( $input['overrides'] ?? '' ) ),
 		);
 	}
 
@@ -133,6 +151,11 @@ class Settings {
 					<tr>
 						<th scope="row"><?php esc_html_e( 'Product cards', 'degriz-hazard' ); ?></th>
 						<td><label><input type="checkbox" name="<?php echo esc_attr( $name ); ?>[show_cards]" value="1" <?php checked( (int) self::get( 'show_cards' ), 1 ); ?>> <?php esc_html_e( 'Show small pictograms under the price (shop, categories, related products)', 'degriz-hazard' ); ?></label></td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="dhz-overrides"><?php esc_html_e( 'Statement texts', 'degriz-hazard' ); ?></label></th>
+						<td><textarea id="dhz-overrides" class="large-text code" rows="6" name="<?php echo esc_attr( $name ); ?>[overrides]" placeholder="P501 | ..."><?php echo esc_textarea( (string) self::get( 'overrides' ) ); ?></textarea>
+							<p class="description"><?php esc_html_e( 'The bundled list is the Slovenian list of the European Commission, which shortens some statements (for example P501 ends with "..."). To show a complete text, enter it here, one per line as: CODE | text.', 'degriz-hazard' ); ?></p></td>
 					</tr>
 				</table>
 				<?php submit_button(); ?>

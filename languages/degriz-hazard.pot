@@ -61,11 +61,11 @@ msgstr ""
 msgid "Gas under pressure"
 msgstr ""
 
-#: includes/class-admin.php:32 includes/class-settings.php:69
+#: includes/class-admin.php:32 includes/class-settings.php:86
 msgid "Hazard (CLP)"
 msgstr ""
 
-#: includes/class-settings.php:68 includes/class-settings.php:118
+#: includes/class-settings.php:85 includes/class-settings.php:136
 msgid "Hazard information (CLP)"
 msgstr ""
 
@@ -85,7 +85,7 @@ msgstr ""
 msgid "Irritant, harmful"
 msgstr ""
 
-#: includes/class-settings.php:131
+#: includes/class-settings.php:149
 msgid "Leave empty for the default title."
 msgstr ""
 
@@ -105,11 +105,11 @@ msgstr ""
 msgid "Precautionary statements (P)"
 msgstr ""
 
-#: includes/class-settings.php:134
+#: includes/class-settings.php:152
 msgid "Product cards"
 msgstr ""
 
-#: includes/class-settings.php:125
+#: includes/class-settings.php:143
 msgid "Product page"
 msgstr ""
 
@@ -117,7 +117,7 @@ msgstr ""
 msgid "Remove"
 msgstr ""
 
-#: includes/class-settings.php:51 includes/class-settings.php:130
+#: includes/class-settings.php:68 includes/class-settings.php:148
 msgid "Safety and warnings"
 msgstr ""
 
@@ -133,11 +133,11 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-#: includes/class-settings.php:135
+#: includes/class-settings.php:153
 msgid "Show small pictograms under the price (shop, categories, related products)"
 msgstr ""
 
-#: includes/class-settings.php:126
+#: includes/class-settings.php:144
 msgid "Show the safety tab"
 msgstr ""
 
@@ -145,7 +145,11 @@ msgstr ""
 msgid "Signal word"
 msgstr ""
 
-#: includes/class-settings.php:129
+#: includes/class-settings.php:156
+msgid "Statement texts"
+msgstr ""
+
+#: includes/class-settings.php:147
 msgid "Tab title"
 msgstr ""
 
@@ -153,7 +157,11 @@ msgstr ""
 msgid "Technical data sheet (PDF)"
 msgstr ""
 
-#: includes/class-settings.php:120
+#: includes/class-settings.php:158
+msgid "The bundled list is the Slovenian list of the European Commission, which shortens some statements (for example P501 ends with \"...\"). To show a complete text, enter it here, one per line as: CODE | text."
+msgstr ""
+
+#: includes/class-settings.php:138
 msgid "The hazard data is entered per product, in the product editor, tab \"Hazard (CLP)\". Variations use the data of their parent product."
 msgstr ""
 

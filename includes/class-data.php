@@ -78,6 +78,13 @@ class Data {
 		}
 		$out = self::$statements[ 'P' === $group ? 'P' : 'H' ];
 
+		// Texts the shop completed or corrected in the settings (the bundled list abbreviates some statements).
+		foreach ( Settings::overrides() as $code => $text ) {
+			if ( isset( $out[ $code ] ) ) {
+				$out[ $code ] = $text;
+			}
+		}
+
 		/**
 		 * Filter the statement list (add codes or texts).
 		 *
