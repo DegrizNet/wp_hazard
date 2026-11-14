@@ -1,0 +1,12 @@
+{
+    "name": "degriznet/wp_hazard",
+    "description": "CLP hazard information for WooCommerce products: signal word, GHS pictograms, H and P statements and safety data sheet downloads.",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "php": ">=8.0"
+    },
+    "extra": {
+        "installer-name": "degriz-hazard"
+    }
+}
