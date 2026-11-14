@@ -1,0 +1,94 @@
+/* Degriz Hazard - safety and warnings block, card pictograms. */
+.degriz-hz__title {
+	margin: 0 0 12px;
+	font-size: 1.3em;
+}
+
+.degriz-hz__head {
+	margin-bottom: 16px;
+}
+
+.degriz-hz__pictos {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 8px;
+}
+
+.degriz-hz__picto {
+	display: block;
+	width: 64px;
+	height: 64px;
+}
+
+.degriz-hz__signal {
+	margin-left: 8px;
+	padding: 4px 10px;
+	border: 2px solid #1e1e1e;
+	font-size: 1.1em;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 1.2;
+}
+
+.degriz-hz__signal--danger {
+	border-color: #c00;
+	color: #c00;
+}
+
+.degriz-hz__subtitle {
+	margin: 16px 0 6px;
+	font-size: 1.05em;
+}
+
+.degriz-hz__list,
+.degriz-hz__downloads {
+	margin: 0 0 8px;
+	padding-left: 1.2em;
+}
+
+.degriz-hz__list li,
+.degriz-hz__downloads li {
+	margin-bottom: 4px;
+}
+
+.degriz-hz__code {
+	white-space: nowrap;
+}
+
+.degriz-hz__size {
+	color: #666;
+	font-size: 0.9em;
+}
+
+/* Small pictograms on product cards. */
+.degriz-hz__pictos--small {
+	display: flex;
+	justify-content: center;
+	gap: 4px;
+	margin-top: 6px;
+}
+
+.degriz-hz__pictos--small .degriz-hz__picto {
+	width: 28px;
+	height: 28px;
+}
+
+.degriz-hz__pictos--small .degriz-hz__signal {
+	margin-left: 4px;
+	padding: 1px 5px;
+	border-width: 1px;
+	font-size: 0.7em;
+}
+
+@media (max-width: 600px) {
+	.degriz-hz__picto {
+		width: 56px;
+		height: 56px;
+	}
+
+	.degriz-hz__pictos--small .degriz-hz__picto {
+		width: 28px;
+		height: 28px;
+	}
+}

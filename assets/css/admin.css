@@ -1,0 +1,48 @@
+.degriz-hz-panel .degriz-hz-select {
+	width: 80%;
+}
+
+.degriz-hz-panel .form-field label.degriz-hz-inline {
+	display: inline-block;
+	float: none;
+	width: auto;
+	margin: 0 16px 0 0;
+}
+
+.degriz-hz-picto-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+	gap: 8px;
+	margin: 0 0 0 162px;
+	padding: 0;
+	list-style: none;
+}
+
+.degriz-hz-panel .degriz-hz-picto-list label {
+	display: flex;
+	float: none;
+	align-items: center;
+	gap: 6px;
+	width: auto;
+	margin: 0;
+}
+
+.degriz-hz-picto-list input {
+	margin: 0;
+}
+
+.degriz-hz-file-name {
+	margin-right: 8px;
+	font-weight: bold;
+}
+
+.degriz-hz-bulk-pictos label {
+	display: inline-block;
+	margin-right: 8px;
+}
+
+@media (max-width: 782px) {
+	.degriz-hz-picto-list {
+		margin-left: 0;
+	}
+}

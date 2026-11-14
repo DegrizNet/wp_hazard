@@ -1,0 +1,166 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Degriz Hazard 1.0.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
+
+#: includes/class-admin.php:209
+msgid "- No change -"
+msgstr ""
+
+#: includes/class-data.php:51
+msgid "Acute toxicity"
+msgstr ""
+
+#: includes/class-admin.php:217
+msgid "Add GHS pictograms"
+msgstr ""
+
+#: includes/class-admin.php:58
+msgid "Choose a PDF"
+msgstr ""
+
+#: includes/class-admin.php:159
+msgid "Choose file"
+msgstr ""
+
+#: includes/class-admin.php:213
+msgid "Clear all hazard data"
+msgstr ""
+
+#: includes/class-data.php:50
+msgid "Corrosive"
+msgstr ""
+
+#: includes/class-data.php:34
+msgid "Danger"
+msgstr ""
+
+#: degriz-hazard.php:62
+msgid "Degriz Hazard requires WooCommerce to be active."
+msgstr ""
+
+#: templates/hazard-info.php:45
+msgid "Documents"
+msgstr ""
+
+#: includes/class-data.php:46
+msgid "Explosive"
+msgstr ""
+
+#: includes/class-data.php:47
+msgid "Flammable"
+msgstr ""
+
+#: includes/class-admin.php:92
+msgid "GHS pictograms"
+msgstr ""
+
+#: includes/class-data.php:49
+msgid "Gas under pressure"
+msgstr ""
+
+#: includes/class-admin.php:32 includes/class-settings.php:69
+msgid "Hazard (CLP)"
+msgstr ""
+
+#: includes/class-settings.php:68 includes/class-settings.php:118
+msgid "Hazard information (CLP)"
+msgstr ""
+
+#: templates/hazard-info.php:27
+msgid "Hazard statements"
+msgstr ""
+
+#: includes/class-admin.php:108
+msgid "Hazard statements (H)"
+msgstr ""
+
+#: includes/class-data.php:54
+msgid "Hazardous to the environment"
+msgstr ""
+
+#: includes/class-data.php:52
+msgid "Irritant, harmful"
+msgstr ""
+
+#: includes/class-settings.php:131
+msgid "Leave empty for the default title."
+msgstr ""
+
+#: includes/class-admin.php:86
+msgid "None"
+msgstr ""
+
+#: includes/class-data.php:48
+msgid "Oxidising"
+msgstr ""
+
+#: templates/hazard-info.php:36
+msgid "Precautionary statements"
+msgstr ""
+
+#: includes/class-admin.php:112
+msgid "Precautionary statements (P)"
+msgstr ""
+
+#: includes/class-settings.php:134
+msgid "Product cards"
+msgstr ""
+
+#: includes/class-settings.php:125
+msgid "Product page"
+msgstr ""
+
+#: includes/class-admin.php:160
+msgid "Remove"
+msgstr ""
+
+#: includes/class-settings.php:51 includes/class-settings.php:130
+msgid "Safety and warnings"
+msgstr ""
+
+#: includes/class-admin.php:118 includes/class-display.php:124
+msgid "Safety data sheet (PDF)"
+msgstr ""
+
+#: includes/class-data.php:53
+msgid "Serious health hazard"
+msgstr ""
+
+#: degriz-hazard.php:76
+msgid "Settings"
+msgstr ""
+
+#: includes/class-settings.php:135
+msgid "Show small pictograms under the price (shop, categories, related products)"
+msgstr ""
+
+#: includes/class-settings.php:126
+msgid "Show the safety tab"
+msgstr ""
+
+#: includes/class-admin.php:85 includes/class-admin.php:207
+msgid "Signal word"
+msgstr ""
+
+#: includes/class-settings.php:129
+msgid "Tab title"
+msgstr ""
+
+#: includes/class-admin.php:119 includes/class-display.php:125
+msgid "Technical data sheet (PDF)"
+msgstr ""
+
+#: includes/class-settings.php:120
+msgid "The hazard data is entered per product, in the product editor, tab \"Hazard (CLP)\". Variations use the data of their parent product."
+msgstr ""
+
+#: includes/class-admin.php:59
+msgid "Use this file"
+msgstr ""
+
+#: includes/class-data.php:35
+msgid "Warning"
+msgstr ""
