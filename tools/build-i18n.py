@@ -12,6 +12,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DOMAIN = 'degriz-hazard'
 
 TRANSLATIONS = {
+    'Disclaimer: the statement texts follow Regulation (EC) No 1272/2008 (CLP), consolidated text of 1 July 2026, and are provided for information only. Classification and labelling remain the responsibility of the supplier: check every hazard class, pictogram, signal word, H statement and P statement against the safety data sheet (SDS) of the product. You alone are responsible for the correctness, completeness and legal compliance of what your shop shows. This is not legal advice. The plugin is provided "as is", without warranty of any kind, and its author is not liable for any damage arising from its use.':
+        'Izjava o odgovornosti: besedila stavkov sledijo Uredbi (ES) št. 1272/2008 (CLP), prečiščeno besedilo z dne 1. julija 2026, in so na voljo zgolj informativno. Razvrščanje in označevanje ostaneta odgovornost dobavitelja: vsak razred nevarnosti, piktogram, opozorilno besedo ter stavke H in P preverite z varnostnim listom (VL) izdelka. Za pravilnost, popolnost in skladnost s predpisi tega, kar prikazuje vaša trgovina, odgovarjate izključno vi. To ni pravni nasvet. Vtičnik je na voljo »kot je«, brez kakršne koli garancije, avtor pa ne odgovarja za nobeno škodo, ki bi nastala pri njegovi uporabi.',
     'Danger': 'Nevarno',
     'Warning': 'Pozor',
     'Explosive': 'Eksplozivno',

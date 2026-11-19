@@ -135,6 +135,7 @@ class Settings {
 		<div class="wrap">
 			<h1><?php esc_html_e( 'Hazard information (CLP)', 'degriz-hazard' ); ?></h1>
 			<?php settings_errors(); ?>
+			<div class="notice notice-warning inline"><p><?php esc_html_e( 'Disclaimer: the statement texts follow Regulation (EC) No 1272/2008 (CLP), consolidated text of 1 July 2026, and are provided for information only. Classification and labelling remain the responsibility of the supplier: check every hazard class, pictogram, signal word, H statement and P statement against the safety data sheet (SDS) of the product. You alone are responsible for the correctness, completeness and legal compliance of what your shop shows. This is not legal advice. The plugin is provided "as is", without warranty of any kind, and its author is not liable for any damage arising from its use.', 'degriz-hazard' ); ?></p></div>
 			<p><?php esc_html_e( 'The hazard data is entered per product, in the product editor, tab "Hazard (CLP)". Variations use the data of their parent product.', 'degriz-hazard' ); ?></p>
 			<form method="post" action="options.php">
 				<?php settings_fields( 'degriz_hazard' ); ?>
